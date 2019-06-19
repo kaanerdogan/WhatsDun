@@ -1,0 +1,7 @@
+{
+  "name": "WhatsDun",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
