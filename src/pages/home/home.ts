@@ -11,4 +11,13 @@ export class HomePage {
 
   }
 
+  itemSelected(item){
+    let items = [
+      {name: "HTML"},
+      {name: "CSS"},
+      {name: "Javascript"}
+    ]
+
+  }
+
 }
