@@ -5,19 +5,32 @@ import { NavController } from 'ionic-angular';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  items : Array <any> = [];
 
+  constructor(public navCtrl: NavController) {
+    this.items = [
+      {base: "web",
+        values:[
+          "HTML",
+          "CSS",
+          "JS"
+        ]
+      },
+      {base:"mobile",
+        values:[
+        "Ionic",
+          "Java"
+        ]
+      }
+    ];
   }
 
   itemSelected(item){
-    let items = [
-      {name: "HTML"},
-      {name: "CSS"},
-      {name: "Javascript"}
-    ]
 
+    console.log(item);
   }
 
 }
